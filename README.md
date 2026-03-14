@@ -100,6 +100,128 @@ http://127.0.0.1:5000
 * Deploy the chatbot on **cloud platforms**
 
 ---
+#Task 2
+
+# 📩 Spam Message Detection using Machine Learning
+
+This project implements a **Spam Message Detection System** using **Machine Learning and Natural Language Processing (NLP)** techniques.
+
+The model analyzes text messages and predicts whether they are **Spam or Not Spam (Ham)**. It uses the **SMS Spam Collection Dataset** and applies **TF-IDF text vectorization** along with a **Naive Bayes classifier** to perform the classification.
+
+This project was developed as **Task-02 during my Internship at Incodevision** to understand the fundamentals of **text processing, machine learning models, and predictive systems**.
+
+---
+
+## 🚀 Features
+
+* Detects whether a message is **Spam or Not Spam**
+* Uses a **real-world SMS spam dataset**
+* Applies **TF-IDF text vectorization**
+* Uses **Naive Bayes classification algorithm**
+* Allows **user input for real-time prediction**
+* Evaluates model performance using **accuracy score**
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Natural Language Processing (NLP)
+
+---
+
+## 📂 Project Structure
+
+```text
+Task2
+│
+├── spam_detector.py      # Machine learning spam detection script
+├── SMSSpamCollection     # Dataset file
+└── README.md
+```
+
+---
+
+## 📊 Dataset
+
+The model is trained using the **SMS Spam Collection Dataset**, which contains **5,500+ SMS messages** labeled as:
+
+* **Ham** → Legitimate message
+* **Spam** → Unwanted or promotional message
+
+Example:
+
+```
+ham   Hey, are we meeting tomorrow?
+spam  Congratulations! You have won a free prize
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/OrbIndraneel/Incodevision.git
+```
+
+Navigate to the Task2 folder:
+
+```bash
+cd Incodevision/Task2
+```
+
+Install required dependencies:
+
+```bash
+pip install pandas scikit-learn
+```
+
+---
+
+## ▶️ Running the Project
+
+Run the spam detection program:
+
+```bash
+python spam_detector.py
+```
+
+Then enter any message to test whether it is spam.
+
+Example:
+
+```
+Enter message: Congratulations you won a free iPhone
+⚠️ Spam Message
+
+Enter message: Let's meet tomorrow
+✅ Not Spam
+```
+
+---
+
+## 🧠 How It Works
+
+1. The dataset is loaded and labeled messages are processed.
+2. Text messages are converted into numerical features using **TF-IDF Vectorization**.
+3. The dataset is split into **training and testing sets**.
+4. A **Naive Bayes classifier** is trained on the training data.
+5. The model predicts whether a new message is **Spam or Not Spam**.
+
+---
+
+## 📈 Future Improvements
+
+* Deploy as a **web application using Flask**
+* Add **deep learning models (LSTM / Transformers)**
+* Improve accuracy with **advanced preprocessing**
+* Integrate with **email or messaging systems**
+
+---
 
 ## 👨‍💻 Author
 
